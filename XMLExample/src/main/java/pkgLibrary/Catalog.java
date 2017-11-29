@@ -33,6 +33,26 @@ public class Catalog {
 		this.books = books;
 	}
 	
+	public Book GetBook(String BookId) {
+		Book b= null;
+		
+		
+		return b;
+		
+	}
+	public void AddBook(Book b)
+	{
+		boolean isExists= false;
+		
+		for(Book bk : this.books)
+		{
+			if (bk.getId() == b.getId())
+			{
+				throw new Exception('book exists')
+			}
+		}
+		this.books.add(b);
+	}
 
 	
 	
